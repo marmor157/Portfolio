@@ -4,10 +4,10 @@
   "description": "Just my portfolio site",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --config webpack/webpack.prod.js --open",
-    "start:prod": "webpack-dev-server --config webpack/webpack.dev.js --open",
+    "start": "node server.js",
+    "start:dev": "webpack-dev-server --config webpack/webpack.dev.js --open",
     "build": "npm run clean && webpack --config webpack/webpack.prod.js",
-    "build:prod": "npm run clean && webpack --config webpack/webpack.dev.js",
+    "build:dev": "npm run clean && webpack --config webpack/webpack.dev.js",
     "clean": "rm -rf ./dist"
   },
   "author": "Mariusz Morawski",
