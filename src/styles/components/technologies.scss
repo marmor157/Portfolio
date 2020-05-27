@@ -1,0 +1,120 @@
+.technologies {
+  width: 100%;
+  .container-fluid {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__element {
+    width: 20%;
+    padding-top: 20%;
+    height: calc(18vw - 19.2px);
+    position: relative;
+    background-size: 100% 100%;
+
+    @media only screen and (max-width: 991px) {
+      height: calc(19vw - 3.7px);
+    }
+
+    div {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0.5;
+    }
+
+    &__logo {
+      width: 60%;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      opacity: 0.6;
+      filter: grayscale(100%);
+      transition-duration: 1s;
+
+      &--invert {
+        filter: invert(1) grayscale(1);
+        transition-duration: 1s;
+      }
+    }
+    img {
+      position: absolute;
+    }
+    &:first-child {
+      width: 60%;
+      div {
+        background: none !important;
+        padding-left: 5%;
+        opacity: 1;
+        padding-right: 5%;
+        h1 {
+          position: relative;
+          top: -5vh;
+          color: $gold;
+          font-family: "Lato";
+          font-size: 6vmin;
+          font-weight: bold;
+        }
+        span {
+          font-family: "Lato";
+          position: relative;
+          top: -5vh;
+          color: rgb(191, 191, 191);
+          font-weight: bold;
+          font-size: 3vmin;
+        }
+        @media (max-width: 768px) {
+          span {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .full-size {
+      top: 0;
+      padding: 0;
+      width: 100%;
+    }
+
+    &:hover &__logo {
+      filter: grayscale(0);
+
+      &--invert {
+        filter: invert(0) grayscale(0);
+      }
+    }
+    &:nth-child(2) {
+      @include background-image(-23deg, #433516, #604f27);
+    }
+    &:nth-child(5) {
+      @include background-image(-23deg, #5d491f, #866d36);
+    }
+    &:nth-child(6) {
+      @include background-image(-23deg, #342e1e, #4b4534);
+    }
+    &:nth-child(8) {
+      @include background-image(-23deg, #0c0a07, #110f0c);
+    }
+    &:nth-child(9) {
+      @include background-image(-23deg, #433b26, #605843);
+    }
+    &:nth-child(10) {
+      @include background-image(-23deg, #605843, #15130e);
+    }
+    &:nth-child(12) {
+      @include background-image(-23deg, #433516, #604f27);
+    }
+    &:nth-child(13) {
+      @include background-image(-23deg, #2a2416, #3c3627);
+    }
+    &:nth-child(15) {
+      @include background-image(-23deg, #594e32, #807559);
+    }
+    &:nth-child(16) {
+      @include background-image(-23deg, #807559, #2a2519);
+    }
+  }
+}

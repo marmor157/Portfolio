@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatibile" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1"
+    />
+    <title>Mariusz Morawski - Frontend Developer</title>
+  </head>
+  <body>
+    <navi></navi>
+    <main>
+      ${require('./components/WelcomeScreen.html')}
+      <div class="main-background">
+        <div class="main-background__image">
+          ${require('./components/Timeline.html')}
+          ${require('./components/Technologies.html')}
+          ${require('./components/About.html')}
+          ${require('./components/Contact.html')}
+          ${require('./components/Footer.html')}
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

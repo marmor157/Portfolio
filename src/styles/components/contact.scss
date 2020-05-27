@@ -1,0 +1,116 @@
+.contact {
+  padding-bottom: 10vh;
+
+  .contact-title {
+    margin-bottom: 10vh;
+  }
+
+  h1 {
+    font-size: 12vmin;
+    font-family: "Lato";
+    color: rgb(196, 172, 111);
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .tempMessage {
+    width: 100%;
+    font-family: "Lato";
+    color: rgb(196, 172, 111);
+    text-align: center;
+    font-size: 2vmin;
+  }
+
+  .form-entry {
+    opacity: 0.35;
+    .gold-line {
+      border-bottom: $gold 2px solid;
+      height: 1px;
+      position: relative;
+      top: 50%;
+    }
+    img {
+      transform: scale(1.3) translateY(-35%);
+    }
+  }
+
+  form {
+    text-align: center;
+    input[type="text"],
+    input[type="email"] {
+      display: inline;
+      width: calc(49% - 10px);
+      background: rgba(190, 190, 190, 0.051);
+      border-radius: 10px;
+      height: 5vmin;
+      margin-bottom: 1vh;
+      float: right;
+      font-size: 2vmin;
+      padding: 0 5px;
+      font-family: "Lato";
+      color: rgba(191, 191, 191, 0.7);
+      line-height: 5vmin;
+      vertical-align: middle;
+      font-weight: bold;
+      &:first-child {
+        float: left;
+      }
+    }
+
+    input[type="submit"] {
+      float: right;
+      width: 20%;
+      height: 5vmin;
+      border-radius: 10px;
+      background-color: rgba(196, 172, 111, 0.202);
+      font-size: 2vmin;
+      font-family: "Lato";
+      color: rgba(191, 191, 191, 0.6);
+      line-height: 5vmin;
+      vertical-align: middle;
+    }
+
+    textarea {
+      width: calc(100% - 10px);
+      background: rgba(190, 190, 190, 0.051);
+      border-radius: 10px;
+      padding: 7px 5px;
+      height: 40vh;
+      resize: none;
+      font-size: 2vmin;
+      font-family: "Lato";
+      font-weight: bold;
+      color: rgba(191, 191, 191, 0.7);
+      margin-bottom: 1vh;
+    }
+  }
+
+  .socials-title {
+    color: $gold;
+    font-size: 6vmin;
+    margin-top: 7vh;
+    font-family: "Lato";
+    font-weight: bold;
+    white-space: nowrap;
+    text-align: center;
+  }
+
+  .socials-row {
+    font-size: 3.5vmin;
+    font-family: "Lato";
+    color: rgb(120, 120, 120);
+    margin-top: 2vh;
+    padding-left: 30px;
+    line-height: 7vmin;
+    vertical-align: middle;
+    white-space: nowrap;
+    img {
+      height: 7vmin;
+      margin-right: 10px;
+    }
+  }
+
+  .github-row {
+    cursor: pointer;
+  }
+}
